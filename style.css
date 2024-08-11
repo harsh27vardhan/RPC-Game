@@ -4,6 +4,10 @@
     text-align: center;
 }
 
+body {
+    background-color: lightgreen;
+}
+
 h1{
     background-color: rgb(0, 0, 55);
     color: white;
@@ -33,7 +37,7 @@ h1{
 
 .choices{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 3rem;
     margin-top: 5rem;
 }
@@ -58,7 +62,21 @@ h1{
     background-color: rgb(0, 0, 55);
     color: #fff;
     font-size: 2rem;
-    display: inline;
+    display: inline-block;
     padding: 1rem;
     border-radius: 1rem;
 }
+
+@media screen and (max-width: 700px){
+    .choice{
+        height: 100px;
+        width: 100px;
+    }
+    .choice img{
+        height: 90px;
+        width: 90px;
+    }
+    #msg{
+        font-size: 1rem;
+    }
+  }
